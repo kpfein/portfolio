@@ -2,9 +2,16 @@ var express = require("express"),
 	mongoose = require("mongoose"),
 	bodyParser = require("body-parser"),
 	app = express(),
-	Contact = require("./server-assets/contactModel"),
-	secret = require("./secret"),
-	uristring = secret.uriString;
+	Contact = require("./server-assets/contactModel")
+
+	var uristring;
+	if (process.env.URI_STRING) {
+		uristring = process.env.URI_STRING;
+	}
+	else {
+		var secret = require("./secret")
+		uristring = secret.uriString;	
+	}
 
 	app.use(express.static(__dirname+"/public"));
 	app.use(bodyParser.json());
