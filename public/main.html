@@ -1,0 +1,144 @@
+<nav class="light-blue lighten-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"><img src="/images/KFlogo-black.png"></a>
+      <ul class="right hide-on-med-and-down">
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+    	<h1 class="section-title center-align">Kyle Feinauer</h1>
+    	<h4 class="section-title center-align">Web Developer</h4>
+    	<div class="myPic-contain">
+    		<img class=" hoverable responsive-img circle" src="/images/kyle.jpg">
+    	</div>
+    </div>
+    <div class="section">
+    	<h2 class="section-title">Projects</h2>
+    	<div class="row">
+	        <div class="col s12 m6 l4">
+		        <div class="card hoverable">
+		            <div class="card-image">
+		              <img src="/images/skedus.png">
+		            </div>
+		            <div class="card-content">
+		              <h5>Platform for organizations to set and book appointments</h5>
+		              <h5>Main responsibility was building UI/UX functionality</h5>
+		              <h5>Designed front-end to show only info relevant to user based on role in organization and status of appointment</h5>
+		              <h6>Group Project - AngularJS - Bootstrap - Node.js - LinkedIn Auth - MongoDB</h6>
+		            </div>
+		            <div class="card-action">
+		              <a target="_blank" href="http://www.sked.us">Sked</a>
+		            </div>
+		        </div>
+		    </div>
+	        <div class="col s12 m6 l4">
+		        <div class="card hoverable">
+		            <div class="card-image">
+		              <img src="/images/weatherish.png">
+		            </div>
+		            <div class="card-content">
+		              <h5>Implemented Geolocation to display local weather data on webpage load</h5>
+		              <h5>Utilized Google Places Library and Autocomplete API for easy user input of search location</h5>
+		              <h6>AngularJS - Bootstrap</h6>
+		            </div>
+		            <div class="card-action">
+		              <a target="_blank" href="http://wwww.weather-ish-kpfein89.c9users.io">Weather-ish</a>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col s12 m6 l4">
+		        <div class="card hoverable">
+		            <div class="card-image">
+		              <img src="/images/homepageish.png">
+		            </div>
+		            <div class="card-content">
+		              <h5>Effectively combined data to layout a homepage for user to get a glimpse of several different things</h5>
+		              <h5>Utilized Twitter authentication to show user's feed, allow them to send a Tweet, and Reply, Retweet or Favorite a Tweet</h5>
+		              <h5>Used the New York Times API and Dark Sky Forecast API for news/sports and weather data</h5>
+		              <h6>Full Stack - AngularJS - Node.js - Bootstrap - PassportJS - MongoDB</h6>
+		            </div>
+		            <div class="card-action">
+		              <a target="_blank" href="http://www.homepage-ish.herokuapp.com">Homepage-ish</a>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+    </div>
+
+    <div class="section">
+    	<h2 class="section-title">Skills</h2>
+    	<div class="row">
+	    	<ul class="col s6">
+	    		<li><h4>JavaScript</h4></li>
+	    		<li><h4>AngularJS</h4></li>
+	    		<li><h4>HTML5</h4></li>
+	    		<li><h4>CSS3</h4></li>
+	    		<li><h4>Bootstrap</h4></li>
+	    		<li><h4>MaterializeCSS</h4></li>
+	    		<li><h4>jQuery</h4></li>
+	    	</ul>
+	    	<ul class="col s6">
+	    		<li class="right-align"><h4>Git/GitHub</h4></li>
+	    		<li class="right-align"><h4>Node.js</h4></li>
+	    		<li class="right-align"><h4>MongoDB</h4></li>
+	    		<li class="right-align"><h4>MongooseJS</h4></li>
+	    		<li class="right-align"><h4>Express.js</h4></li>
+	    		<li class="right-align"><h4>ReactJS</h4></li>
+	    		<li class="right-align"><h4>PassportJS</h4></li>
+	    	</ul>
+        	<p id="resume">Download <a href="files/kyleFeinauerResume.pdf" download="My Resume"> My Resume</a></p>
+    	</div>
+    </div>
+    <div class="section">
+    	<h2 class="section-title">Contact Me</h2>
+    	<div class="row">
+    		<div class="col s12 l6">
+		    	<div class="input-field col s12">
+		    		<i class="material-icons prefix">account_box</i>
+		        	<input ng-model="contact.fullName" id="full_name" type="text">
+		        	<label for="full_name">Full Name</label>
+		        </div>
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">email</i>
+		        	<input ng-model="contact.email" id="email" type="text">
+		        	<label for="email">Email</label>
+		        </div>
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">subject</i>
+		        	<input ng-model="contact.subject" id="subject" type="text">
+		        	<label for="subject">Subject</label>
+		        </div>
+    		</div>
+    		<div class="col s12 l6">
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">message</i>
+		        	<textarea style="height:198px" ng-model="contact.message" id="message" type="text"></textarea>
+		        	<label for="message"><span>  </span>  Message</label>
+		        	<p class="right-align"><button ng-click="submitMessage(contact)" style="background-color:light-blue" class="btn" type="submit" name="action">Submit</button></p>
+		        </div>
+    		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="social">
+	    		<a target="_blank" href="http://www.linkedin.com/in/kylefeinauer.com"><img style="width:40px" src="/images/linkedin.png"></a>
+	    		<a target="_blank" href="http://www.github.com/kpfein"><img style="width:40px" src="/images/github.png"></a>
+	    		<a target="_blank" href="https://www.facebook.com/kyle.feinauer.5"><img style="width:40px" src="/images/facebook.png"></a>
+	    		<a target="_blank" href="https://twitter.com/kpFeinauer"><img style="width:40px" src="/images/twitter.png"></a>
+	    	</div>
+	    </div>
+    </div>
+  </div>
+
+    </div>
+  <footer class="page-footer light-blue lighten-2">
+    <div class="container">
+     
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <h6 class="center-align">© 2016 Kyle Feinauer</h6>
+      </div>
+    </div>
+  </footer>

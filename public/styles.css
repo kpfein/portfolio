@@ -1,0 +1,57 @@
+/*         contact form             /////////////////////////////////////*/
+
+ /* label color */
+   .input-field label {
+     color: #F55E5E;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #F55E5E;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #F55E5E;
+     box-shadow: 0 1px 0 0 #F55E5E;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #F55E5E;
+     box-shadow: 0 1px 0 0 #F55E5E;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #F55E5E;
+     box-shadow: 0 1px 0 0 #F55E5E;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #F55E5E;
+   }
+
+.social {
+	text-align: center;
+}
+
+#logo-container {
+	padding-top: 10px;
+}
+#resume {
+	text-align: center;
+}
+.container {
+	width: 80%;
+}
+.btn {
+	background-color: #F55E5E
+}
+.myPic-contain {
+	margin: 0 auto;
+	width:40%;
+}
+.myPic {
+	background: url(images/kyle.jpg);
+	height:500px;
+}
+.section-title {
+	font-family: "Playball"
+}
